@@ -5,6 +5,13 @@ pipeline {
             args '-p 3000:3000' 
         }
     }
+    stages {    
+        stage("Hello") {
+            steps {
+                echo("Hello World")
+            }
+        }
+    }
     stages {
         stage('Build') { 
             steps {
